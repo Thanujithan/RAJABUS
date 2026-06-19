@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="booking-history.css" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="theme.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="home.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_orange.css">
+
+  <title>RAJA BUS</title>
+</head>
+<body>
+  
+  <div class="image">
+    <img class="crest" id="home" src="images/rajalogo.png" />
+  </div>
+  <div class="top-border"></div>
+<div class="container">
+ 
+  <div class="navbar">
+
+
+<!-- Backdrop -->
+<div id="backdrop" class="nav-backdrop" hidden></div>
+
+    
+    
+    <div class="logo">RAJA <span>BUS.</span></div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="home.html#about">About</a>
+      <a href="review.html">Review</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking-history.html"  class="active">Journey</a>
+
+    </div>
+    
+    <button id="themeToggle"
+          type="button"
+          class="theme-toggle nav-abs"
+          aria-label="Toggle dark mode">
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+  </button>
+    <script src="theme.js" defer></script>
+    <div class="hotline">HOT LINE <span>1824</span></div>
+  </div>
+
+
+  <div class="login-area">
+  <a href="login.html" class="login-btn">
+    <i class="fa-solid fa-user"></i>
+  </a>
+</div>
+<main class="journey-page">
+
+    <section class="clean-hero">
+      <div class="hero-left">
+        <span>RAJA BUS</span>
+        <h1>Journey History</h1>
+        <p>View your tickets, QR codes and booking records in one place.</p>
+      </div>
+
+      <a href="home.html" class="new-trip-btn">
+        <i class="fa-solid fa-plus"></i>
+        New Trip
+      </a>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <i class="fa-solid fa-route"></i>
+        <h2>12</h2>
+        <p>Total Trips</p>
+      </div>
+
+      <div class="stat-card">
+        <i class="fa-solid fa-wallet"></i>
+        <h2>Rs. 15,450</h2>
+        <p>Total Spent</p>
+      </div>
+
+      <div class="stat-card">
+        <i class="fa-solid fa-circle-check"></i>
+        <h2>19 Jun 2026</h2>
+        <p>Last Trip</p>
+      </div>
+    </section>
+
+    <section class="ticket-grid">
+
+      <div class="ticket-card">
+        <div class="ticket-info">
+          <span class="ticket-id">RB102548</span>
+          <h3>Mihintale <i class="fa-solid fa-arrow-right-long"></i> Jaffna</h3>
+          <p>Passenger: <b>Jathurshan John</b></p>
+          <p>Seats: <b>11, 21</b></p>
+          <p>Fare: <b>Rs. 1734</b></p>
+        </div>
+
+        <div class="ticket-action">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=90x90&data=RB102548">
+          <span class="paid">Paid</span>
+          <button onclick="window.print()">
+            <i class="fa-solid fa-download"></i> PDF
+          </button>
+        </div>
+      </div>
+
+      <div class="ticket-card">
+        <div class="ticket-info">
+          <span class="ticket-id">RB102549</span>
+          <h3>Mihintale <i class="fa-solid fa-arrow-right-long"></i> Colombo</h3>
+          <p>Passenger: <b>Jathurshan John</b></p>
+          <p>Seats: <b>08, 09</b></p>
+          <p>Fare: <b>Rs. 2400</b></p>
+        </div>
+
+        <div class="ticket-action">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=90x90&data=RB102549">
+          <span class="paid">Paid</span>
+          <button onclick="window.print()">
+            <i class="fa-solid fa-download"></i> PDF
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+
+
+
+
+
+</html>

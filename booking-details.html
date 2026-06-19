@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - Raja Bus</title>
+   
+
+  <link rel="stylesheet" href="booking-details.css">
+ 
+   <link rel="stylesheet" href="globals.css" />
+   
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_orange.css">
+
+</head>
+<body> 
+  <div class="image">
+    <img class="crest" id="home" src="images/rajalogo.png" />
+  </div>
+  <div class="top-border"></div>
+<div class="container">
+ 
+  <div class="navbar">
+
+
+
+
+
+
+
+    
+    
+    <div class="logo">RAJA <span>BUS.</span></div>
+    <div class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="home.html#about">About</a>
+      <a href="review.html">Review</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking-history.html">Journey</a>
+    </div>
+    
+    <button id="themeToggle"
+          type="button"
+          class="theme-toggle nav-abs"
+          aria-label="Toggle dark mode">
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+  </button>
+    <script src="theme.js" defer></script>
+    <div class="hotline">HOT LINE <span>1824</span></div>
+  </div>
+
+
+  <div class="login-area">
+  <a href="login.html" class="login-btn">
+    <i class="fa-solid fa-user"></i>
+  </a>
+</div>
+
+
+
+<div class="booking-container">
+
+  <div class="alert-box">
+    You have to complete your booking.
+  </div>
+
+  <h1>Your Details</h1>
+
+  <div class="details-grid">
+
+    <div class="input-group">
+      <label>Name</label>
+      <input type="text" placeholder="Name">
+    </div>
+
+    <div class="input-group">
+      <label><span>*</span> Mobile No.</label>
+      <input type="text" placeholder="701234567">
+    </div>
+
+    <div class="input-group">
+      <label>NIC/Passport No.</label>
+      <input type="text" placeholder="012345678V">
+    </div>
+
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" placeholder="name@example.lk">
+    </div>
+
+  </div>
+
+ <div class="booking-bottom">
+
+  <div class="booking-summary">
+
+    <div class="summary-item">
+      <span>Selected Seats</span>
+      <b>11,21</b>
+    </div>
+
+    <div class="summary-item">
+      <span>Boarding Point</span>
+      <b>Mihintale</b>
+    </div>
+
+    <div class="summary-item">
+      <span>Dropping Point</span>
+      <b>Jaffna</b>
+    </div>
+
+  </div>
+
+  <div>
+    <div class="fare-card">
+      <h4>Total Fare</h4>
+      <h2>Rs.1300</h2>
+    </div>
+
+   <button class="continue-btn" id="paymentBtn">
+  Continue To Payment
+</button>
+  </div>
+
+</div>
+
+<script src="booking-details.js"></script>
+
+
+</body>

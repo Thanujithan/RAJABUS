@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - Raja Bus</title>
+   
+
+  <link rel="stylesheet" href="result.css">
+ 
+   <link rel="stylesheet" href="globals.css" />
+   
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_orange.css">
+
+</head>
+<body> 
+  <div class="image">
+    <img class="crest" id="home" src="images/rajalogo.png" />
+  </div>
+  <div class="top-border"></div>
+<div class="container">
+ 
+  <div class="navbar">
+
+
+
+
+
+
+
+    
+    
+    <div class="logo">RAJA <span>BUS.</span></div>
+    <div class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="home.html#about">About</a>
+      <a href="review.html">Review</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking-history.html">Journey</a>
+    </div>
+    
+    <button id="themeToggle"
+          type="button"
+          class="theme-toggle nav-abs"
+          aria-label="Toggle dark mode">
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+  </button>
+    <script src="theme.js" defer></script>
+    <div class="hotline">HOT LINE <span>1824</span></div>
+  </div>
+
+
+  <div class="login-area">
+  <a href="login.html" class="login-btn">
+    <i class="fa-solid fa-user"></i>
+  </a>
+</div>
+ 
+
+
+<header class="result-header">
+  
+
+ 
+</header>
+
+<section class="hero">
+  <h1>Available Buses</h1>
+  <p>Choose your best route and book your seat easily.</p>
+
+  <div class="search-summary">
+    <div>
+      <i class="fa-solid fa-location-dot"></i>
+      <span>From</span>
+      <b>Mihintale</b>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-map-location-dot"></i>
+      <span>To</span>
+      <b id="districtName">Jaffna</b>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-calendar-days"></i>
+      <span>Date</span>
+      <b id="travelDate">2026-06-18</b>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-bus"></i>
+      <span>Bus Type</span>
+      <b id="busType">CTB</b>
+    </div>
+  </div>
+</section>
+
+<section class="results-section">
+
+  <div class="bus-card">
+    <div class="card-top">
+      <div>
+        <h2>Mihintale <i class="fa-solid fa-arrow-right-long"></i> Jaffna</h2>
+        <p>Bus No: <b>NB-1824</b></p>
+      </div>
+
+      <span class="seat-badge">32 Seats</span>
+    </div>
+
+    <div class="bus-info">
+      <div>
+        <i class="fa-regular fa-clock"></i>
+        <span>Departure</span>
+        <b>08:30 AM</b>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-clock"></i>
+        <span>Arrival</span>
+        <b>12:30 PM</b>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-road"></i>
+        <span>Distance</span>
+        <b>171 KM</b>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-ticket"></i>
+        <span>Fare</span>
+        <b>Rs. 650</b>
+      </div>
+    </div>
+
+    <button class="book-btn">Book Now</button>
+  </div>
+
+  <div class="bus-card">
+    <div class="card-top">
+      <div>
+        <h2>Mihintale <i class="fa-solid fa-arrow-right-long"></i> Jaffna</h2>
+        <p>Bus No: <b>NC-4521</b></p>
+      </div>
+
+      <span class="seat-badge low">18 Seats</span>
+    </div>
+
+    <div class="bus-info">
+      <div>
+        <i class="fa-regular fa-clock"></i>
+        <span>Departure</span>
+        <b>02:30 PM</b>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-clock"></i>
+        <span>Arrival</span>
+        <b>06:30 PM</b>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-road"></i>
+        <span>Distance</span>
+        <b>171 KM</b>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-ticket"></i>
+        <span>Fare</span>
+        <b>Rs. 700</b>
+      </div>
+    </div>
+
+    <button class="book-btn">Book Now</button>
+  </div>
+
+</section>
+<div class="seat-modal" id="seatModal">
+  <div class="sl-seat-box">
+    <button class="close-seat" id="closeSeat">×</button>
+
+    <div class="legend-row">
+      <span><i class="lg available"></i> Available Seats</span>
+      <span><i class="lg processing"></i> Processing Seats</span>
+      <span><i class="lg counter"></i> Counter Seats</span>
+      <span><i class="lg booked"></i> Booked Seats</span>
+    </div>
+
+    <div class="bus-area">
+      
+      <div class="seat-map" id="busLayout"></div>
+    </div>
+<button class="proceed-btn" id="proceedBtn">Proceed</button>
+
+    
+
+<div class="footer-actions">
+  
+</div>
+
+<div class="bottom-bar">
+
+  <div class="info-item">
+    <span>Seat No</span>
+    <b id="selectedSeats">00</b>
+  </div>
+
+  <div class="info-item">
+    <span>Boarding</span>
+    <b>Mihintale</b>
+  </div>
+
+  <div class="info-item">
+    <span>Dropping</span>
+    <b>Jaffna</b>
+  </div>
+
+  <div class="info-item fare">
+    <span>Total Fare</span>
+    <b><span id="totalFare">00</span></b>
+  </div>
+
+</div>
+  
+
+
+
+
+
+  </div>
+</div>
+<script src="seat.js"></script>
+</body>
+
+
+</html>
