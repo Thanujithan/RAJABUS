@@ -532,6 +532,7 @@ body {
   font-family: Poppins, system-ui, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--ink);
   margin: 0;
+  
 }
 
 .top-routes {
@@ -772,12 +773,13 @@ body {
   position: relative;
   width: 100%;
   min-height: 400px;
-  background: url("images/rajabg.png") center/cover no-repeat;
+  background: url("rajabg.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 32px 16px;
   margin-top: 40px;
+  
 }
 
 /* Glassmorphism container */
